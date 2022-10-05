@@ -1,0 +1,112 @@
+.calcBox {
+     margin:auto;
+     color:white;
+     font-size:40px;
+     font-weight:bold;
+      margin-top: 8%;
+      width:300px;
+      height: 450px;
+      background-color: red; /* For browsers that do not support gradients */
+      background-image: linear-gradient(  black, indigo);
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 20px;
+    }
+    .row:after{
+        content:"";
+        display: table;
+        clear:both;
+    }
+    .col{
+        margin-left: 10%;
+        float:left;
+        width: 60%;
+        height:200px;
+        border: none;
+        
+    
+    }
+    .col1{
+        margin-right: 10%;
+        float:right;
+        width: 15%;
+        height:80px;
+        border: none;
+    
+    }
+    input{
+       
+        text-align: right;
+         background-color: transparent; 
+        border: none;
+        width: 250px;
+        height: 40px;
+        margin-top: 10%;
+        margin-left: 20px;
+  }
+  #sym
+  {
+    margin-top: 0px;
+    position:relative;
+    top: -27px;
+  }
+  
+    
+    #calc{
+        width: 250px;
+        color:rgb(192, 191, 191);
+        font-size: 20px;
+       
+    }
+    button{
+        margin: 0%;
+        color: white;
+        background-color: transparent;
+       
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 10px;
+       
+        
+    }
+    .extend{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .symbol{
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .num{
+        font-size: 25px;
+    }
+    .symbol1{
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .symbol2{
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .material-icons{
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    #result{
+        color: white;
+        font-size: 30px;
+       margin-top: 0px;
+       position: relative;
+       top: -39.5px;
+        
+    }

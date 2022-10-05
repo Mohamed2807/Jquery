@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='calc.css'>
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='calc.js'></script>
+  </head>
+<body style="background-color: grey;">
+  <div class="calcBox">
+      <div class="row">
+      <input id="calc" style="margin-bottom: 0px;"type="number" disabled>
+      <input id="sym" type="text" style=" text-align: left; height: 10px; color:aliceblue; font-size: 10px;" disabled>
+      <input id="result" type="number" style="margin-top: 0px;"disabled>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="symbol" id="Delete" onmousedown="mouseDown('Delete')" onmouseup="mouseUp('Delete')">Ac</button>
+        <button  class="material-icons" id="Backspace"  onmousedown="mouseDown('Backspace')" onmouseup="mouseUp('Backspace')" style="font-size:11px ;">&#xe14a;</button>
+        <button class="extend" id="div" onmousedown="mouseDown('div')" onmouseup="mouseUp('div')">/</button>
+        <button class="num" id="7" onmousedown="mouseDown('7')" onmouseup="mouseUp('7')">7</button>
+        <button class="num" id="8" onmousedown="mouseDown('8')" onmouseup="mouseUp('8')">8</button>
+        <button class="num" id="9" onmousedown="mouseDown('9')" onmouseup="mouseUp('9')">9</button>
+        <button class="num" id="4"onmousedown="mouseDown('4')" onmouseup="mouseUp('4')">4</button>
+        <button class="num" id="5"onmousedown="mouseDown('5')" onmouseup="mouseUp('5')">5</button>
+        <button class="num" id="6"onmousedown="mouseDown('6')" onmouseup="mouseUp('6')">6</button>
+        <button class="num" id="1"onmousedown="mouseDown('1')" onmouseup="mouseUp('1')">1</button>
+        <button class="num" id="2"onmousedown="mouseDown('2')" onmouseup="mouseUp('2')">2</button>
+        <button class="num" id="3"onmousedown="mouseDown('3')" onmouseup="mouseUp('3')">3</button>
+        <button class="num" id="0"onmousedown="mouseDown('0')" onmouseup="mouseUp('0')"style="width:130px">0</button>
+        <!-- <button class="extend" id="dot"onmousedown="mouseDown('dot')" onmouseup="mouseUp('dot')">.</button> -->
+      </div>
+      <div class="col1">
+        <button class="symbol1" id="mul"onmousedown="mouseDown('mul')" onmouseup="mouseUp('mul')">X</button>
+        <button class="extend" id="min"onmousedown="mouseDown('min')" onmouseup="mouseUp('min')">-</button>
+        <button class="symbol2" id="plus"onmousedown="mouseDown('plus')" onmouseup="mouseUp('plus')">+</button>
+        <button class="symbol2" id="equal"onmousedown="mouseDown('equal')" onmouseup="mouseUp('equal')">=</button>
+      </div>
+    </div>
+   </div>
+</body>
+</html>

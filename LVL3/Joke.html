@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Random Joke Generator</title>
+    <style media="screen">
+      *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+}
+body{
+    background-color: #0772a7;
+}
+.wrapper{
+    width: 400px;
+    padding: 50px 40px;
+    background-color: #fafdfd;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 20px 20px 40px rgba(97,63,0,0.4);
+}
+span{
+    display: block;
+    text-align: center;
+    margin-top: -30px;
+    color:#063f63;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+p{
+    font-size: 16px;
+
+
+    box-shadow: 0 0 20px rgba(0,139,253,0.28);
+ 
+    font-weight: 400;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 35px;
+    margin: 30px 0;
+    opacity: 0;
+}
+.fade{
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+button{
+    display: block;
+    background-color: #0354ab;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    color: #e7e7ec;
+    font-weight: 500;
+    padding: 12px 25px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+    </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <span>Random Joke Generator</span>
+        <p id="joke"></p>
+        <button id="btn">Generate Joke</button>
+    </div>   
+  <script type="text/javascript">
+const jokeContainer=$("#joke");
+const btn = $("#btn");
+const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
+const material={
+    1:"What’s the best thing about Switzerland?I don’t know, but the flag is a big plus.",
+    2:"I invented a new word! Plagiarism!",
+    3:"Did you hear about the mathematician who’s afraid of negative numbers? He’ll stop at nothing to avoid them.",
+    4:"Why do we tell actors to “break a leg?”Because every play has a cast. Here are some dark jokes to check out if you have a morbid sense of humor.",
+    5:"Helvetica and Times New Roman walk into a bar.“Get out of here!” shouts the bartender. “We don’t serve your type.”"  
+}
+var val=Math.floor(Math.random()*5);
+console.log();
+let getJoke = () => {
+    val=Math.floor(Math.random()*5);
+    jokeContainer.attr("class",'');
+        console.log("helo");
+        jokeContainer.text(material[val]);
+        jokeContainer.attr("class",'fade');
+}
+btn.click(()=>{getJoke();})
+getJoke();
+  </script>
+</body>
+</html>
